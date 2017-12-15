@@ -1,17 +1,16 @@
-check_knuerr_pdu
-================
+# check\_knuerr\_pdu
 
 `check_knuerr_pdu.pl` recieves the data from the knuerr\_pdu devices. It can check thresholds of 
 the modules.
 
 http://www.netways.de/en/de/produkte/icinga_and_nagios_plugins/knuerr/
 
-### Requirements
+# Requirements
 
 * Perl libraries: `Net::SNMP`
 
 
-### Usage
+# Usage
 
     check_knuerr_pdu.pl -h
 
@@ -29,8 +28,8 @@ Options:
     -c      The critical threshold.
     --man   Displays the complete perldoc manpage.
 
-    check_knuerr_cooltherm -h
+    check_knuerr_pdu.pl -h
 
-    check_knuerr_cooltherm --man
+    check_knuerr_pdu.pl --man
 
-    check_knuerr_cooltherm -H <hostname> [<SNMP community>]
+    check_knuerr_pdu.pl -H <hostname> [<SNMP community>]
